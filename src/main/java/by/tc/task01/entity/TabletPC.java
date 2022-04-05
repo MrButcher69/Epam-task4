@@ -15,7 +15,7 @@ public class TabletPC extends Appliance{
     @Override
     public String toString() {
         return "TabletPC{" +
-                "tabletPcCriteria=" + tabletPcCriteria +
+                tabletPcCriteria +
                 '}';
     }
 }

@@ -15,7 +15,7 @@ public class Speakers extends Appliance{
     @Override
     public String toString() {
         return "Speakers{" +
-                "speakersCriteria=" + speakersCriteria +
+                speakersCriteria +
                 '}';
     }
 }

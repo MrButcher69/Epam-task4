@@ -13,10 +13,11 @@ import java.net.URISyntaxException;
 
 public class ApplianceServiceImpl implements ApplianceService{
 
+	final private Validator validator = new CriteriaValidator();
+
 	@Override
 	public Appliance find(Criteria criteria) throws IOException, URISyntaxException {
-		CriteriaValidator crit = new CriteriaValidator();
-		if (!crit.criteriaValidator(criteria)) {
+		if (!(validator.validatorOfCriteria(criteria))) {
 			return null;
 		}
 		

@@ -15,7 +15,7 @@ public class Laptop extends Appliance{
     @Override
     public String toString() {
         return "Laptop{" +
-                "laptopCriteria=" + laptopCriteria +
+                laptopCriteria +
                 '}';
     }
 }

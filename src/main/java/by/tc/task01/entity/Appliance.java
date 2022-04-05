@@ -6,11 +6,4 @@ public  class Appliance {
     public Appliance(String name) {
         this.name = name;
     }
-
-    @Override
-    public String toString() {
-        return "Appliance{" +
-                "name='" + name + '\'' +
-                '}';
-    }
 }

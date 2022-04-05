@@ -11,7 +11,8 @@ import java.util.Set;
 public class CriteriaValidator implements Validator{
 
     @Override
-    public boolean criteriaValidator(Criteria criteria) {
+    public boolean validatorOfCriteria(Criteria criteria) {
+
         boolean rez = true;
         int count = 0;
 
@@ -20,6 +21,7 @@ public class CriteriaValidator implements Validator{
             if(entry.getKey() == null){
                 rez = false;
             }
+
             if(entry.getValue() == null){
                 rez = false;
             }
@@ -33,6 +35,7 @@ public class CriteriaValidator implements Validator{
                     enumFields = getInitialSizeOfEnumFields(enumClass);
 
                     for(String item : enumFields){
+
                         if(item.equals(entry.getKey())){
                             count++;
                         }
@@ -44,7 +47,6 @@ public class CriteriaValidator implements Validator{
         if(!(count == criteria.getCriteria().size())){
             rez = false;
         }
-
         return rez;
     }
 
@@ -57,5 +59,5 @@ public class CriteriaValidator implements Validator{
         }
         return enumFields;
     }
-    }
+}
 

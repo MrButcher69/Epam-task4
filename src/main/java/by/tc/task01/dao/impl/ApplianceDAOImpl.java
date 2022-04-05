@@ -25,16 +25,16 @@ public class ApplianceDAOImpl implements ApplianceDAO{
 
 		Map<String, Object> criteriaMap = criteria.getCriteria();
 		Map<String, Object> map = new HashMap<>();
-		String strng;
+		String str;
 
-		while ((strng = bufferedReader.readLine()) != null) {
+		while ((str = bufferedReader.readLine()) != null) {
 
 			String[] criterias;
 			String[] valueOfCriteria;
 			boolean isTrue = false;
 			int count = 0;
 
-			String[] parts = strng.split(" : ");
+			String[] parts = str.split(" : ");
 
 			if(Objects.equals(parts[0], criteria.getGroupSearchName())){
 				criterias = parts[1].split(", ");

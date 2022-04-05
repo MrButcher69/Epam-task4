@@ -15,7 +15,7 @@ public class VacuumCleaner extends Appliance{
     @Override
     public String toString() {
         return "VacuumCleaner{" +
-                "vacuumCleanerCriteria=" + vacuumCleanerCriteria +
+                vacuumCleanerCriteria +
                 '}';
     }
 }

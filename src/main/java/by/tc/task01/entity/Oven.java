@@ -15,7 +15,7 @@ public class Oven extends Appliance{
     @Override
     public String toString() {
         return "Oven{" +
-                "ovenCriteria=" + ovenCriteria +
+                ovenCriteria +
                 '}';
     }
 }
